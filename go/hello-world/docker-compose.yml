@@ -1,0 +1,16 @@
+version: "3"
+services:
+  webserver:
+    privileged: true
+    build: .
+    container_name: go-webserver
+    ports:
+      - 8181:80
+    volumes:
+      - ./src:/var/www
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_ROOT_PASSWORD: root
+    ports:
+      - 5555:5432

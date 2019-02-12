@@ -1,0 +1,7 @@
+version: "3"
+services:
+  webserver:
+    build: .
+    container_name: swift-webserver
+    ports:
+      - 8181:8181
