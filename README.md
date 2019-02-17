@@ -1,2 +1,2 @@
 # Docker
-Lightning talk of how docker to works.
+Lightning talk of how docker works
